@@ -1,79 +1,129 @@
-
-body{
+body {
     text-align: center;
-    font-family: 'Trebuchet MS',sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: rgb(236, 228, 228);
     background-size: cover;
-    
-    
-    
-    
+
+
 
 }
-header{
 
-    background: linear-gradient(to right,rgb(240, 54, 41),rgb(51, 38, 240));
+header {
+
+    background: linear-gradient(to right, rgb(240, 54, 41), rgb(51, 38, 240));
     padding-top: 20px;
     height: 20%;
     color: white;
     font-size: 1.5rem;
-    
-    }
-img{
+
+}
+
+img {
     height: 250px;
     width: 250px;
     border-radius: 150px;
     padding-top: 10px;
+    margin-right: 50rem;
+    margin-top: 2rem;
 }
-.container{
+
+.wrapper {
+
+    position: absolute;
+    color: #130d0d;
+    padding: 2rem;
+  }
+
+.wrapper p{
+    width: 55vw;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+@keyframes slide-up{
+    0%,10% {
+        transform: translatey(0%);
+    }
+    15%,25%{
+        transform: translateY(-100%);
+    }
+    30%,40%{
+        transform: translateY(-200%);
+
+    }
+    45%,55%{
+
+        transform: translatey(-300%);
+    }
+    60%,70%{
+        transform: translateY(-400%);
+    }
+    75%,85%{
+        transform: translateY(-500%);
+    }
+}
+.wrapper .content ol{
+
+    list-style: none;
+    --height: 3.8rem;
+    height: var(--height);
+    line-height: var(--height);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+}
+
+.wrapper .content ol li span{
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(20deg,cyan,magenta);
+    -webkit-background-clip: text;
+
+    white-space: nowrp;
+
+    border-right: .4rem solid #fff;
+
     display: inline-block;
 }
-.typewriter{
-    padding-left: 30%;
-    overflow: hidden;
-    border-right: .15em solid white;
-    white-space: nowrap;
-    animation: 
-       typing 2s forwards;
-    font-size: 1.7rem;
-    width: 0;
 
 
 
-}
-@keyframes typing{
-   from{width: 0;}
-   to{width: 100%;}
-   
-}
-:root{
+
+
+
+:root {
     --total-skills: 7;
     --logo-width: 12rem;
     --total-logo-width: calc(var(--total-skills) * var(--logo-width) *2);
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-section h1{
-    font: 600 1.5rem ;
+
+section h1 {
+    font: 600 1.5rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
     margin-top: 10rem;
     text-align: center;
 }
 
-.slider{
+.slider {
     position: relative;
 
     width: 100ww;
     height: 12rem;
     background-color: #fff;
 
-    box-shadow: 0.8rem 1.4rem -.2rem  #0001;
+    box-shadow: 0.8rem 1.4rem -.2rem #0001;
 
     display: flex;
 
@@ -82,7 +132,7 @@ section h1{
 }
 
 .slider::before,
-.slider::after{
+.slider::after {
     position: absolute;
     content: "";
 
@@ -90,18 +140,19 @@ section h1{
     width: var(--logo-width);
 
 }
-.slider::before{
+
+.slider::before {
     left: 0;
-    background: linear-gradient(to right, #fff 0%,#fff0 100%);
+    background: linear-gradient(to right, #fff 0%, #fff0 100%);
 
 }
 
-.slider::after{
+.slider::after {
     right: 0;
-    background: linear-gradient(to left, #fff 0% , #fff0 100%);
+    background: linear-gradient(to left, #fff 0%, #fff0 100%);
 }
 
-.slider ul.skills{
+.slider ul.skills {
     list-style: none;
 
     width: var(--total-logo-width);
@@ -110,20 +161,77 @@ section h1{
 
     animation: slideLeft 14s linear infinite;
 }
-.slider:hover ul.skills{
+
+.slider:hover ul.skills {
     animation-play-state: paused;
 }
 
-@keyframes slideLeft{
-    100%{
+@keyframes slideLeft {
+    100% {
         transform: translateX(calc(-100% /2));
     }
 }
 
-ul.skills li.skill{
+ul.skills li.skill {
     width: var(--logo-width);
     font-size: 2rem;
     text-align: center;
     margin-left: 3rem;
 
+}
+
+.contact {
+    margin-top: 6rem;
+}
+
+ul {
+
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.fa-instagram {
+    margin-left: 20px;
+    font-size: 2rem;
+
+}
+
+.fa-github {
+
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    font-size: 2rem;
+
+}
+
+.fa-linkedin {
+
+    margin-left: 20px;
+    font-size: 2rem;
+}
+
+.fa-github:hover {
+
+    background-color: rgb(14, 15, 14);
+    color: rgb(235, 240, 231);
+    border-radius: 10px;
+
+
+
+
+}
+
+.fa-instagram:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.fa-linkedin:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
