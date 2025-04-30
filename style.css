@@ -10,11 +10,12 @@ body {
 
 header {
 
-    background: linear-gradient(to right, rgb(240, 54, 41), rgb(51, 38, 240));
-    padding-top: 20px;
+    background: linear-gradient(to right, rgb(211, 24, 24), rgb(43, 19, 179));
+    padding-top: 40px;
     height: 20%;
     color: white;
     font-size: 1.5rem;
+    height: 10rem;
 
 }
 
@@ -25,69 +26,18 @@ img {
     padding-top: 10px;
     margin-right: 50rem;
     margin-top: 2rem;
+    margin-left: 34rem;
+    
+    
 }
 
-.wrapper {
-
-    position: absolute;
-    color: #130d0d;
-    padding: 2rem;
-  }
-
-.wrapper p{
-    width: 55vw;
-    margin: 1rem 0;
-    font-weight: 300;
+h3{
+    margin-top: 6rem;
 }
 
-@keyframes slide-up{
-    0%,10% {
-        transform: translatey(0%);
-    }
-    15%,25%{
-        transform: translateY(-100%);
-    }
-    30%,40%{
-        transform: translateY(-200%);
-
-    }
-    45%,55%{
-
-        transform: translatey(-300%);
-    }
-    60%,70%{
-        transform: translateY(-400%);
-    }
-    75%,85%{
-        transform: translateY(-500%);
-    }
-}
-.wrapper .content ol{
-
-    list-style: none;
-    --height: 3.8rem;
-    height: var(--height);
-    line-height: var(--height);
-
-    overflow: hidden;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-
-}
-
-.wrapper .content ol li span{
-    font-weight: 600;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(20deg,cyan,magenta);
-    -webkit-background-clip: text;
-
-    white-space: nowrp;
-
-    border-right: .4rem solid #fff;
-
-    display: inline-block;
+p{
+    font-weight: 100;
+    margin-top: 3rem;
 }
 
 
@@ -189,12 +139,15 @@ ul {
     list-style-type: none;
     display: flex;
     align-items: center;
+    margin-top: 3%;
+    margin-left: 30rem;
 
 }
 
 .fa-instagram {
     margin-left: 20px;
     font-size: 2rem;
+   
 
 }
 
@@ -234,4 +187,12 @@ ul {
     background-color: black;
     color: white;
     border-radius: 10px;
+}
+
+footer{
+    background: linear-gradient(to right, rgb(211, 24, 24), rgb(43, 19, 179) );
+    height: 5rem;
+    padding-top: 1px;
+    margin-top: 2rem;
+ 
 }
